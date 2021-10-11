@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote</title>
+    <link rel="stylesheet" href="style.css"> 
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+
+    
+}
+.h1{
+       text-align: center;
+}
+
+  .nav-list{
+        /* background-color: black;*/
+         width: 50%;
+         display:flex;
+         text-align: center;
+  }
+  .nav-list li{
+         list-style: none;
+  }
+  .nav-list li a{
+         text-decoration: none;
+         color: white;
+         padding: 20px;
+         font-size: 27px;
+        border-radius:5px;
+  
+  }
+  .nav-list li a:hover{
+         color: rgb(235, 62, 19);
+         cursor: pointer;
+  }
+#search{
+       padding: 5px;
+       font-size: 17px;
+       border:2px solid rgb(241, 236, 236);
+       border-radius: 10px;
+       /* border-right-width: 400px; */
+}
+.background{
+       background-image: url("https://freedesignfile.com/upload/2018/01/Girl-working-with-laptop-at-work-Stock-Photo-03.jpg");
+       background-blend-mode: darken;
+       color: black;
+       background-size: cover;
+       max-height: 80vh;
+       max-width: 1oovh;
+}
+.p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center;
+}
+.firstsection{
+       height:100vh;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    color: rgb(8, 8, 8);
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+    
+}
+.firsthalf{
+    width: 80%;
+    flex-direction:column;
+    justify-content: center;
+}
+.text-big1{
+    font-size: 40px;
+    color:White;
+}
+.text-small1{
+    font-size: 15px;
+    color :white
+}
+.box{
+    border: 2px solid tomato;
+       padding:5px;
+       display:block;
+       margin:4px auto;
+       width:33%;
+       background-color: #08e9da;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    text-align: center;
+
+}
+#contact-box{
+    background-color: grey;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar background">
+
+        <ul class="nav-list">
+            <li ><a href="#">Home</a> </li>
+            <li ><a href="#">Blogs</a> </li>
+            <li ><a href="#">Contact</a></li>
+        </ul>
+        <section class="background firstsection">
+            <div class="box-main">
+                <div class="firsthalf">
+                    <h1 class="text-big1">This is best website </h1>
+                    <p class="text-small1">Search blog 
+                    </p><br>
+                    <div>
+                        <input type="text" name="search" placeholder="Which article you want?" id="search">
+                    </div>
+                </div>
+            </div>
+        </section> <br>  
+        <div class="article">
+            <h1>Blogs</h1><br>
+            <article>
+                <div class="box">
+                <header>
+                    <h1>Your attitude,not your aptitude,will<br> determine your altitude</h1>
+                   <address> <h2>Written by:Zig Ziglar</h2></address><br>
+                   <h4>BriainaryQuote</h4>
+                </header>
+            </div>
+                
+            <div class="box">
+                <header>
+                    <h1>Life is 100% what happens to<br>you and 90% hoe you react <br>to it</h1>
+                   <address><h2>Charles R.Swindoll</h2></address><br>
+                   <h4>BriainaryQuote</h4>
+                </header>
+            </div>
+            <div class="box">
+                <header>
+                    <h1>Life isn't about finding <br>yourself .Life is<br> about creating yourself</h1>
+                   <address><h2>George Benard Shaw</h2></address><br>
+                   <h4>BriainaryQuote</h4>
+                </header>
+            </div>
+            </article>
+        </div>
+        <br><br>
+        <section id="contact">
+            <h1 class="h-primary center">Contact Us</h1>
+            <div id="contact-box">
+                <form action="">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Enter your name:">
+                    </div><br>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="name" id="email" placeholder="Enter your e-mail:">
+                    </div><br>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="phone" name="name" id="phone" placeholder="Enter your phone:">
+                    </div><br>
+                    <div class="form-group">
+                        <label for="message"><em>Comment on blog</em></label>
+                        <textarea name="message" id="message" cols="65" rows="5"></textarea>
+                    </div>
+                </form>
+            </div>
+            <footer>
+                <div class="center">
+                    Copyright &copy;www.brainyquote.com. All rights reserved!
+                </div>
+            </footer>
+</body>
+</html>
